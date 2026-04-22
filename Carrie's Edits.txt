@@ -1,0 +1,26 @@
+Tweaks done to make Guillotine ready for JLC:
+- moved the 3 holes from Edge Cuts to User 1 (This keeps their original position and size for reference)
+- added a 3.0mm Mounting Hole from the KiCad Mounting Hole library for jump ring hole. 
+- added 2.0mm Mounting Holes from same KiCad library for guillotine blade
+- I added the above holes directly in the PCB using the Add Component button on the right.  I then made sure in properties to check all 4 boxes for: not in schematic, do not include in position file, do not include in BOM, and do not populate.  The first is really the most important - this means KiCad will never accidentally delete your hole if you later update the PCB from the Schematic.
+- Edited the local copy of the battery holder that's on the PCB.  Deleted the 3 holes and made the silk outline thicker (it was at 0.05mm which was so fine it may not have printed well).  Made it a typical 0.15mm.  Also added a 3D model I downloaded from Digi-Key.
+- Added 3D model of switch to the footprint, moved footprint toward board edge a little so switch stalk would stick out.
+- Edited local copies of the 3 LEDs to rotate the solid models into proper position over the pads.  This and the above 3D model associations are done in the footprint editor - double-click an empty spot next to the footprint and navigate to the 3D model tab.  You can add models there and rotate & move them to the right position over the silk & pads.
+- Briefly ungrouped all flourishes so I could add a 0.1mm solder mask "expansion" - this means there is 0.1mm that is unmasked between the copper and where the mask starts.  This helps with registration errors during the fab, so if the soldermask is a little off, it still won't overlap those copper areas.  KiCad calls this Soldermask margin override.  Regrouped items after finished.  Then found there's an "Enter Group" option from right-click menu, and did that to change it for all other graphics lines.
+- increased + and - size to 2x2mm from 1x1mm.  It was so small that it was unlikely to show up well in silkscreen, especially if you they make it with actual silk screen (not digitally printed).  Generally the cheaper service will be actual silk screen, and small features (if they show up at all) are blobby.
+- added provided silk logo and text artwork to back of PCB
+- added explainer text to back of PCB
+- made lines that form box around head hole same thickness as main cutout (0.5mm)
+- moved board outline 0.2mm away from exposed copper that outlines the guillotine.  Saw that some lines were actually splines and slightly off vert/horiz and linear, changed them to lines and squared up everything.  This was a little time-consuming in KiCad (but I'm used that kind of zoomed-in vertex moving), prob much easier to do using an offset tool in Inkscape, and then re-importing that an as svg on the Edge Cuts layer.
+- Ran DRC - it has big issues with the There U Glow and Eat the Rich text, totally bogs down.  Probably has to do with them being a lot of complicated polygons with many vertices.  Had to move them temporarily to fab layers and then Run DRC.  Ignored errors about soldermask bridging different nets when both nets identified were "no net".  This error exists to make sure you're not accidentally removing soldermask in a way that would cause two traces that are actually part of the circuit and close to each other, that have different connections, to be exposed which could lead to solder bridging.  This can especially be a problem when a finish like HASL (hot-air solder leveled where hot solder is literally blown across the PCB) is applied, less of an issue for gold plating.  Regardless, if both objects in the DRC error were "no net", that means they're just part of the graphic and don't matter.  I did NOT ignore errors about soldermask bridging between "no net" and an actual net.  While the graphics themselves could be bridged to an active part of the circuit once without affecting anything, if they're close to 2 different nets in two different places, that could result in a short.  Took the below actions to create just a smidge more space between connected pads and graphics.
+- moved center LED up for more room from top flourish (this is the soldering side, would be easy to bridge)
+- moved bottom flourish up for more room from battery pads. 
+- moved line underneath battery pads just a smidge down. 
+- moved each of the holes for the blade toward center by 1mm to give more space from top flourish
+
+
+
+
+
+
+

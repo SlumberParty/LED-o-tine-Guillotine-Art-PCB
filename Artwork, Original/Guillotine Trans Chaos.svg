@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f750, 2025-12-25)"
+   sodipodi:docname="Guillotine Trans Chaos.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.52410024"
+     inkscape:cx="325.31944"
+     inkscape:cy="590.53588"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     inkscape:window-x="0"
+     inkscape:window-y="103"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.0184457;stroke-dasharray:none;stroke-opacity:1"
+       d="m 103.08507,162.82398 v 2.22969 l -0.5175,-0.5175 0.31287,-0.31287 -0.46027,-0.46027 -0.32391,0.3239 -0.43039,-0.43039 0.43039,-0.007 v -0.61425 h -1.54652 c 0,0 -0.008,1.00854 0,1.51135 h 0.65584 v -0.43039 l 0.43039,0.43039 -0.3117,0.31173 0.46027,0.46027 0.31172,-0.31173 0.51751,0.51751 -2.27505,-0.0112 -0.008,-0.52235 -0.84739,0.84738 0.84738,0.84738 c 1e-5,0 1e-5,-0.54 1e-5,-0.54 l 2.28279,0.002 -1.65369,1.65364 -0.41037,-0.41036 v 1.31089 h 1.3109 l -0.4361,-0.43611 1.66057,-1.64675 c -0.007,0.4903 0.0314,0.9904 -0.005,1.47854 l -0.58116,0.005 -0.003,0.59453 0.58829,0.004 -1e-4,0.80668 0.31388,5.3e-4 0.31387,5.2e-4 -0.004,-0.8077 0.58424,1e-5 -10e-6,-0.60264 -0.58443,-6e-4 8e-5,-1.47962 1.65231,1.65235 -0.43051,0.4305 h 1.31037 l 1e-5,-1.31038 -0.40857,0.40858 -1.65005,-1.65462 c 0.75784,0.0282 2.28051,0.004 2.28051,0.004 l 2e-5,0.53554 0.84738,-0.84737 -0.8474,-0.84509 -0.005,0.53125 c 0,0 -1.51993,-0.002 -2.27524,-0.002 l 1.40475,-1.40475 -1e-5,0.41825 h 0.65389 v -1.50033 l -1.56963,-2e-5 v 0.62069 h 0.4345 l -1.39712,1.39486 v -2.22742 c 0.0178,0.01 0.58437,0 0.58437,0 l -0.89722,-0.89723 -0.89725,0.89723 z"
+       id="path434"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>
